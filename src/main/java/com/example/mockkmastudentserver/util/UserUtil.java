@@ -266,8 +266,8 @@ public class UserUtil {
                 .userName("Luu Dinh Kien")
                 .password("CT060319")
                 .role(RoleModel.ADMIN)
-                .build()
-        );
+                .build());
+
         return items;
     }
 }

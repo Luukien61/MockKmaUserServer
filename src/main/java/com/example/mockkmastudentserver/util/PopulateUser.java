@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class PopulateUser implements CommandLineRunner {
     private UserService userService;
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         populateUser();
     }
     private void populateUser(){

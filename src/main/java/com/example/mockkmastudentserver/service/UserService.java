@@ -16,7 +16,7 @@ public class UserService {
 
     public void saveUser(UserEntity user) {
         try {
-            var existUser = userRepository.findByPersonalId(user.getPersonalId().trim()).orElse(null);
+            var existUser = userRepository.findByPersonalId(user.getPersonalId().toUpperCase()).orElse(null);
             if (existUser == null) {
                 userRepository.save(user);
             }
