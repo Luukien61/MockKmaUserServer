@@ -261,6 +261,13 @@ public class UserUtil {
                 .role(RoleModel.USER)
                 .password("CT060341")
                 .build());
+        items.add(UserEntity.builder()
+                .personalId("CT060319")
+                .userName("Luu Dinh Kien")
+                .password("CT060319")
+                .role(RoleModel.ADMIN)
+                .build()
+        );
         return items;
     }
 }
